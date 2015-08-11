@@ -24,7 +24,7 @@ public class MainActivity extends ActionBarActivity {
 
         ImageView i = (ImageView) findViewById(R.id.imageView1);
 
-        try {
+        /*try {
             URL url = new URL("http://ioe.edu.np/exam/notices/8560Result%20Diploma%20I_I.jpg");
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setDoInput(true);
@@ -34,7 +34,7 @@ public class MainActivity extends ActionBarActivity {
             i.setImageBitmap(myBitmap);
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
 
         button = (Button) findViewById(R.id.button);
         button2 = (Button) findViewById(R.id.button2);
