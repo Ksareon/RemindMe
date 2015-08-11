@@ -22,6 +22,20 @@ public class MainActivity extends ActionBarActivity {
         ImageView imageView = (ImageView) findViewById(R.id.imageView);
         imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_camera_black_48dp));
 
+        ImageView i = (ImageView) findViewById(R.id.imageView1);
+
+        try {
+            URL url = new URL("http://ioe.edu.np/exam/notices/8560Result%20Diploma%20I_I.jpg");
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setDoInput(true);
+            connection.connect();
+            InputStream input = connection.getInputStream();
+            Bitmap myBitmap = BitmapFactory.decodeStream(input);
+            i.setImageBitmap(myBitmap);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         button = (Button) findViewById(R.id.button);
         button2 = (Button) findViewById(R.id.button2);
 
