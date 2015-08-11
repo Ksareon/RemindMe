@@ -1,5 +1,6 @@
 package com.example.xareon.p0111_resvalues;
 
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -7,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+
 
 
 public class MainActivity extends ActionBarActivity {
@@ -22,7 +24,9 @@ public class MainActivity extends ActionBarActivity {
         ImageView imageView = (ImageView) findViewById(R.id.imageView);
         imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_camera_black_48dp));
 
-        ImageView i = (ImageView) findViewById(R.id.imageView1);
+        //ImageView i = (ImageView) findViewById(R.id.imageView1);
+
+        //Uri.parse("android.resource://ru.alexanderklimov.sample/" + R.id.imageView1);
 
         /*try {
             URL url = new URL("http://ioe.edu.np/exam/notices/8560Result%20Diploma%20I_I.jpg");
