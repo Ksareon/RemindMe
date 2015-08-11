@@ -26,7 +26,6 @@ public class MainActivity extends ActionBarActivity {
         button = (Button) findViewById(R.id.button);
         button2 = (Button) findViewById(R.id.button2);
 
-
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
